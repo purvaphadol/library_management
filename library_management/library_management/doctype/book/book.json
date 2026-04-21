@@ -1,13 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "LIB-BOOK-.YYYY.-",
- "creation": "2026-04-21 10:55:27.736659",
+ "autoname": "naming_series:",
+ "creation": "2026-04-21 12:51:44.249561",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "title",
   "author",
   "isbn",
@@ -73,10 +74,10 @@
    "reqd": 1
   },
   {
+   "default": "1",
    "fieldname": "available_copies",
    "fieldtype": "Int",
-   "label": "Available Copies",
-   "read_only": 1
+   "label": "Available Copies"
   },
   {
    "default": "Available",
@@ -95,11 +96,17 @@
    "fieldname": "image",
    "fieldtype": "Attach Image",
    "label": "Image"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "LIB-BOOK-.YYYY.-"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-21 10:55:27.736659",
+ "modified": "2026-04-21 14:14:11.338354",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",
