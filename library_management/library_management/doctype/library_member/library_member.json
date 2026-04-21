@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LIB-MEM-.YYYY.-",
+ "creation": "2026-04-21 11:14:37.734449",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "email",
+  "phone",
+  "membership_details_section",
+  "membership_start_date",
+  "membership_end_date",
+  "column_break_w8fhe",
+  "membership_status",
+  "id_proof_type",
+  "id_proof_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "membership_details_section",
+   "fieldtype": "Section Break",
+   "label": "Membership Details"
+  },
+  {
+   "default": "Today",
+   "fieldname": "membership_start_date",
+   "fieldtype": "Date",
+   "label": "Membership Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "membership_end_date",
+   "fieldtype": "Date",
+   "label": "Membership End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_w8fhe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Active",
+   "fieldname": "membership_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Membership Status",
+   "options": "Active\nExpired\nSuspended"
+  },
+  {
+   "fieldname": "id_proof_type",
+   "fieldtype": "Select",
+   "label": "ID Proof Type",
+   "options": "\nAadhaar Card\nPAN Card\nPassport\nDriving License\nVoter ID"
+  },
+  {
+   "fieldname": "id_proof_number",
+   "fieldtype": "Data",
+   "label": "ID Proof Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-21 11:14:37.734449",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Member",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Member",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
