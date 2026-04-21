@@ -213,3 +213,30 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"library_management.auth.validate"
 # ]
+# ──────────────────────────────────────────────
+# FIXTURES
+# ──────────────────────────────────────────────
+fixtures = [
+    # Export our custom Roles
+    {
+        "dt": "Role",
+        "filters": [
+            ["name", "in", ["Librarian", "Library Member"]]
+        ]
+    },
+    # Export custom fields we added to core DocTypes
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "in", ["Customer"]]
+        ]
+    },
+    # Export property setters (if you used Customize Form
+    # to change existing field properties like making a field mandatory)
+    {
+        "dt": "Property Setter",
+        "filters": [
+            ["doc_type", "in", ["Customer"]]
+        ]
+    }
+]
