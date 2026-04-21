@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LIB-BOOK-.YYYY.-",
+ "creation": "2026-04-21 10:55:27.736659",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "author",
+  "isbn",
+  "publication_details_section",
+  "publisher",
+  "publication_date",
+  "column_break_b9uha",
+  "total_copies",
+  "available_copies",
+  "status",
+  "cover_image_section",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Author",
+   "reqd": 1
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "ISBN",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "publication_details_section",
+   "fieldtype": "Section Break",
+   "label": "Publication Details"
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "Publisher"
+  },
+  {
+   "fieldname": "publication_date",
+   "fieldtype": "Date",
+   "label": "Publication Date"
+  },
+  {
+   "fieldname": "column_break_b9uha",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "total_copies",
+   "fieldtype": "Int",
+   "label": "Total Copies",
+   "reqd": 1
+  },
+  {
+   "fieldname": "available_copies",
+   "fieldtype": "Int",
+   "label": "Available Copies",
+   "read_only": 1
+  },
+  {
+   "default": "Available",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Available\nIssued\nLost\nUnder Maintenance"
+  },
+  {
+   "fieldname": "cover_image_section",
+   "fieldtype": "Section Break",
+   "label": "Cover Image"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-21 10:55:27.736659",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Book",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
