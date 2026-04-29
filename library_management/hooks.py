@@ -27,10 +27,25 @@ scheduler_events = {
 # FIXTURES
 # ──────────────────────────────────────────────
 fixtures = [
+    # Export our custom Roles
     {
         "dt": "Role",
         "filters": [
             ["name", "in", ["Librarian", "Library Member"]]
+        ]
+    },
+    # Export custom fields we added to core DocTypes
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "in", ["Customer"]]
+        ]
+    },
+    # Export property setters
+    {
+        "dt": "Property Setter",
+        "filters": [
+            ["doc_type", "in", ["Customer"]]
         ]
     }
 ]
