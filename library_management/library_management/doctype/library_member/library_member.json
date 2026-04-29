@@ -1,13 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "LIB-MEM-.YYYY.-",
+ "autoname": "naming_series:",
  "creation": "2026-04-21 11:14:37.734449",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "full_name",
   "email",
   "phone",
@@ -83,11 +84,17 @@
    "fieldname": "id_proof_number",
    "fieldtype": "Data",
    "label": "ID Proof Number"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "LIB-MEM-.YYYY.-"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-21 11:14:37.734449",
+ "modified": "2026-04-21 14:18:30.202720",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",
